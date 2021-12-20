@@ -427,8 +427,21 @@ body{
   font-family: 'Poppins', sans;
 }
 
+.mx-11 {
+  margin-left: 2.75rem;
+  margin-right: 2.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
 .h-5 {
   height: 1.25rem;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .bg-gray-800 {
