@@ -19,5 +19,8 @@
   "homepage": "https://github.com/letdummy/swp-fki-real#readme",
   "devDependencies": {
     "tailwindcss": "^3.0.7"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }
