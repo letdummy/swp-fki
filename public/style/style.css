@@ -422,3 +422,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
+
+body{
+  font-family: 'Poppins', sans;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
