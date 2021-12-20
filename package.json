@@ -1,0 +1,23 @@
+{
+  "name": "swp-fki-real",
+  "version": "1.0.0",
+  "description": "meong",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/style.css -o ./public/style/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letdummy/swp-fki-real.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letdummy/swp-fki-real/issues"
+  },
+  "homepage": "https://github.com/letdummy/swp-fki-real#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
+  }
+}
