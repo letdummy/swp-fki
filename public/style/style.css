@@ -442,6 +442,40 @@ body{
   --tw-shadow-colored: 0 0 #0000;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .m-10 {
   margin: 2.5rem;
 }
@@ -477,12 +511,40 @@ body{
   height: 1.5rem;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .w-screen {
   width: 100vw;
 }
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .scale-100 {
@@ -495,12 +557,32 @@ body{
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -562,6 +644,23 @@ body{
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\/images\/umsEdutorium\.png\'\)\] {
+  background-image: url('./images/umsEdutorium.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/umsEdutorium\.png\'\)\] {
+  background-image: url('../images/umsEdutorium.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -595,9 +694,28 @@ body{
   padding-right: 0.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-sm {
@@ -608,6 +726,26 @@ body{
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-semibold {
@@ -645,6 +783,21 @@ body{
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-blue-900 {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -690,6 +843,11 @@ body{
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
+.hover\:text-gray-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -711,5 +869,10 @@ body{
   .xl\:px-48 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .xl\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
