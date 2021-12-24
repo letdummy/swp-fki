@@ -13,7 +13,7 @@
     />
     <title>Program Study</title>
 </head>
-<body class="bg-gray-600 ">
+<body class="bg-gray-600 text-white">
     <!-- Navbar  -->
     <nav class="bg-white shadow-lg py-4">
         <div class="max-w-8xl mx-auto px-4">
@@ -83,43 +83,76 @@
          </h1>
          <hr class="text-white p-3">
          <div class="flex items-center">
-            <p class="mr-5">Which Study Program ??</p>
+            <p class="mr-5 relative">Which Study Program ??</p>
 
-            <div class="flex flex-col">
-               <button class="bg-blue-300 py-2 px-4 rounded" id="dropbtn">
+            <div class="flex flex-col text-gray-900">
+               <button class="bg-blue-300 py-2 px-10 rounded relative text-gray-600" id="dropbtn">
                   Informatics
                </button>
 
-               <div class="bg-gray-300 hidden flex-col mt-1 p-2 rounded" id="dropmenu">
+               <div class="bg-gray-300 hidden flex-col mt-12 p-3 rounded absolute" id="dropmenu">
                   <a href="" class="px-2 py-1 hover:bg-gray-500 rounded">Informatics</a>
                   <a href="" class="px-2 py-1 hover:bg-gray-500 rounded">Communication</a>
                </div>
             </div>
          </div>
 
+         <p class="mt-5">
+            The Informatics Engineering Study Program, which was established in 2007, <br>
+            leads to specialization in the fields of Information Systems, Computer Network Systems <br>
+            and Multimedia, and Software Engineering and Animation Systems.
+            <br> <br>
+            Here is the Structural Officer of Informatics Engineering Study Program.
+            
+         </p>
 
 
-
-
+         <div class="p-10 my-10 bg-gray-600 mt-10 rounded justify-center">
+            <div class="p-10 bg-gray-400 rounded flex flex-row wigth w-4/5 mx-auto">
+                  <img src="../images/dedi-gunawan.png" alt="" class="mr-10">
+                  <div class="flex flex-col text-xl p-10">
+                     <p class="mb-3">Dedi Gunawan, S.T., M.Sc., Ph.D.</p>
+                     <p class="mt-3">the Head of Study Program</p>
+                  </div>
+            </div>
+            <div class="p-10 my-10 bg-gray-400 rounded flex flex-row wigth w-4/5 mx-auto">
+               <img src="../images/devi-afriyantari.png" alt="" class="mr-10">
+               <div class="flex flex-col text-xl p-10">
+                  <p class="mb-3">Devi Afriyantari Puspa Putri, S.Kom., M.Sc.</p>
+                  <p class="mt-3">the Deputy of Study Program</p>
+               </div>
+         </div>
+         <div class="p-10 my-10 bg-gray-400 rounded flex flex-row wigth w-4/5 mx-auto">
+            <img src="../images/maryam.png" alt="" class="mr-10">
+            <div class="flex flex-col text-xl p-10">
+               <p class="mb-3">Maryam, S.Kom., M.Eng.</p>
+               <p class="mt-3">the Quality Insurance</p>
+            </div>
+         </div>
+         <div class="p-10 my-10 bg-gray-400 rounded flex flex-row wigth w-4/5 mx-auto">
+            <img src="../images/fatah-yasin.png" alt="" class="mr-10">
+            <div class="flex flex-col text-xl p-10">
+               <p class="mb-3">Fatah Yasin Al Irsyadi, S.T., M.T.</p>
+               <p class="mt-3">the Head of Laboratory</p>
+            </div>
+         </div>
+         </div>
     </div>
 
 
     <script>
-       window.addEventListener('DOMContentLoaded', ()=>{
-          const dropBtn = document.querySelector
-          ('#dropbtn')
-          const dropMenu = document.querySelector
-          ('#dropmenu')
+         var dropBtn = document.getElementById('dropbtn')
+         var dropMenu = document.getElementById('dropmenu')
 
-          dropBtn.addEventListener('click', ()=>{
-             if(dropbtn.classList.contains('hidden')){
-                dropbtn.classList.remove
-                ('hidden');
-                dropbtn.classList.add
-                ('flex');
-             }
-          })
-       })
+         dropBtn.addEventListener('click', ()=> {
+            if(dropMenu.classList.contains('hidden')){
+               dropMenu.classList.remove('hidden');
+               dropMenu.classList.add('flex');
+            }else{
+                    dropdown.classList.remove('flex')
+                    dropdown.classList.add('hidden')
+                }
+         })
 
     </script>
 
