@@ -8,6 +8,9 @@ module.exports = {
         '2sm': '10rem',
         '3sm': '15rem'
       },
+      height: {
+        '90': '22.5rem' 
+      }
     },
   },
   plugins: [],
