@@ -535,6 +535,16 @@ body{
   margin-right: 2.5rem;
 }
 
+.-mx-9 {
+  margin-left: -2.25rem;
+  margin-right: -2.25rem;
+}
+
+.-mx-10 {
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -875,6 +885,11 @@ body{
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-semibold {
