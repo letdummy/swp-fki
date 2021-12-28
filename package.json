@@ -21,6 +21,7 @@
     "tailwindcss": "^3.0.7"
   },
   "dependencies": {
+    "coc-tailwindcss": "^0.3.0",
     "live-server": "^1.2.1"
   }
 }

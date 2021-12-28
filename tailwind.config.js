@@ -3,7 +3,15 @@ module.exports = {
 "./public/pages/**/*.{html,js}"
 ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        '2sm': '10rem',
+        '3sm': '15rem'
+      },
+      height: {
+        '90': '22.5rem' 
+      }
+    },
   },
   plugins: [],
 }

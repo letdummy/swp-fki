@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
+       rel="stylesheet"
+    />
+    <title>Information</title>
+</head>
+<body>
+        <!-- Navbar  -->
+      <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10">
+         <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+               <div class="flex justify-between w-full ">
+                  <div>
+                     <a href="/"><img src="./images/umslogo.png" alt=""></a>
+                  </div>
+                  <!-- navabar item primary -->
+                  <div class="hidden md:flex items-center space-x-1">
+                     <ul class="flex flex-row ">
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="/" >Home</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./pages/profile.html" >Profile</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./pages/program-study.html" >Study Program</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./pages/information.html" >Information</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./pages/contacts.html" >Contact</a></li>
+                        
+                     </ul>
+               </div>
+            </div>
+               <!-- Mobile menu  -->
+               <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                     <svg
+                        class="w-6 h-6 text-gray-500 hover:text-blue-600"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                     >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                     </svg>
+                  </button>
+            </div>
+         </div>
+         <!-- Mobile menu -->
+         <div class="hidden mobile-menu">
+            <ul class="">
+               <li class="active"> <a href="/" class="block text-sm px-2 py-4 text-white bg-blue-800 font-semibold ">Home</a></li>
+               <li><a href="./pages/profile.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Profile</a></li>
+               <li><a href="./pages/program-study.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Study Program</a></li>
+               <li><a href="./pages/information.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Information</a></li>
+               <li><a href="./pages/contacts.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Contact</a></li>
+               
+            </ul>
+         </div>
+         <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+               menu.classList.toggle("hidden");
+            });
+         </script>
+      </nav>
+<!-- End of navbar -->
+
+<section class="w-full bg-[#262743] h-screen overflow-x-hidden">
+   <div class=" filter blur-3xl">
+      <div class=" bg-[#386A99] w-96 h-96 rounded-full scale-y-[.2] scale-x-[3] rotate-45 -translate-x-44 "></div>
+      <div class=" bg-[#386A99] w-96 h-96 rounded-full scale-y-[.2] scale-x-[3] rotate-45 -translate-x-44 float-right object-right-bottom "></div>
+      <!-- <div class="relative bg-blue-400 w-96 h-96 rounded-full"></div> -->
+      <!-- <div class="relative  bg-violet-600 w-96 h-96 rounded-full"></div> -->
+      
+   </div>
+   <div class="container">
+      <div>
+         <h1>Browse information about your study here. </h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem possimus magnam exercitationem ducimus inventore optio impedit similique fuga aut, amet nesciunt sequi modi explicabo! Corporis natus officia deserunt, error, nobis id sequi cum dignissimos, adipisci eius mollitia nesciunt recusandae. Voluptates tenetur illo fuga sint impedit!</p>
+      </div>
+   </div>
+</section>
+
+
+</body>
+</html>
