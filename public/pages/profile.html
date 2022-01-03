@@ -8,17 +8,245 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap"
+       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
        rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Profile</title>
 </head>
-<body>
-    <div class="flex flex-row bg-gray-800">
-        <ul class="text-gray-300">
-            <li>Tes</li>
-            <li>kucing</li>
-        </ul>
-    </div>
+<body class="overflow-x-hidden">
+
+  <!-- Navbar  -->
+  <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10">
+   <div class="container mx-auto px-4">
+      <div class="flex justify-between">
+         <div class="flex justify-between w-full ">
+            <div>
+               <a href="/"><img src="../images/umslogo.png" alt=""></a>
+            </div>
+            <!-- navabar item primary -->
+            <div class="hidden md:flex items-center space-x-1">
+               <ul class="flex flex-row ">
+                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="/" >Home</a></li>
+                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./profile.html" >Profile</a></li>
+                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./program-study-informatics.html" >Study Program</a></li>
+                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./information.html" >Information</a></li>
+                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./contacts.html" >Contact</a></li>
+                  
+               </ul>
+         </div>
+      </div>
+         <!-- Mobile menu  -->
+         <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+               <svg
+                  class="w-6 h-6 text-gray-500 hover:text-blue-600"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+               >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+               </svg>
+            </button>
+      </div>
+   </div>
+   <!-- Mobile menu -->
+   <div class="hidden mobile-menu">
+      <ul class="">
+         <li class="active"> <a href="/" class="block text-sm px-2 py-4 text-white bg-blue-800 font-semibold text-white ">Home</a></li>
+         <li><a href="./profile.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Profile</a></li>
+         <li><a href="./program-study-informatics.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Study Program</a></li>
+         <li><a href="./information.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Information</a></li>
+         <li><a href="./contacts.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Contact</a></li>
+         
+      </ul>
+   </div>
+   <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+         menu.classList.toggle("hidden");
+      });
+   </script>
+</nav>
+<!-- End of navbar -->
+
+
+   <!--Visi Misi Tujuan  -->
+   <section class="w-screen flex justify-center">
+      <div class="container flex justify-center">
+         <div class="bg-white mx-auto pt-24 pb-10">
+            <h1 class="font-bold flex justify-center text-3xl bg-clip-content" >
+               Vision & Mission
+            </h1>
+
+            <div class="pt-9">
+               <div class="bg-blue-800 text-white flex flex-row py-4 px-5 rounded-3xl my-6 mx-40">
+                  <p class="text-2xl basis-1/2 font-semibold text-white" >Vision</p>
+                  <p class="basis-1/2">
+                     In 2029, Universitas Muhammadiyah Surakarta
+                     will become the Center for Islamic
+                     Science and Technology Education and
+                     Development and provide a direction for change.
+                  </p>
+               </div>
+   
+               <div class="bg-blue-800 text-white flex flex-row py-4 px-5 rounded-3xl my-6 mx-40">
+                  <p class="text-2xl basis-1/2 font-semibold text-white">Mission</p>
+                  <p class="basis-1/2">
+                     1. Educate students to master science and technology in the 
+                        field of communication and informatics based on Islamic values.<br><br>
+                     2. Conducting research activities in the field of communication 
+                        pand informatics, both theoretical and applied.<br><br>
+                     3. Organizing services to the community as a form of service.<br><br>
+                     4. Establish and enhance sustainable cooperation with relevant 
+                        parties at regional, national and international levels.
+                  </p>
+               </div>
+   
+               <div class="bg-blue-800 text-white flex flex-row py-4 px-5 rounded-3xl my-6 mx-40">
+                  <p class="text-2xl basis-1/2 font-semibold text-white">Goal</p>
+                  <p class="basis-1/2">
+                     1. To produce graduates of communication science and informatics 
+                        who master science and technology in the field of communication and informatics 
+                        based on Islamic values.<br><br>
+                     2. Produce research and development products in the field of 
+                        communication and informatics.<br><br>
+                     3. Produce community service products in the field of 
+                        communication and informatics.<br><br>
+                     4. Implement sustainable cooperation with related 
+                        parties at regional, national and international levels.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!--Pimpinan-->
+   <section class="w-screen flex justify-center bg-white">
+      <div class="container flex justify-center">
+         <div class="bg-white -300 w-screen pt-24">
+            <h1 class="font-bold flex justify-center text-3xl">FACULTY LEADER</h1>
+            <div class="grid grid-cols-2 grid-rows-2 pt-16 mx-20">
+               <div class="bg-slate-50 flex-col py-12 px-5 rounded-3xl my-3 mx-6">
+                  <img src="../images/1 dekan.png" class="w-auto px-3 md:w-56 mx-auto" alt="">
+                  <p class="flex justify-center font-semibold text-slate-600 text-xl">dean of FKI</p>
+                  <p class="flex justify-center text-slate-800">Nurgiyatna S.T. M.Sc. Ph.D.</p>
+               </div>
+               <div class="bg-slate-50 flex-row py-12 px-5 rounded-3xl my-3 mx-5">
+                  <img src="../images/2 wakil 1.png" class="w-auto px-3 md:w-56 mx-auto" alt="">
+                  <p class="flex justify-center font-semibold text-slate-600 text-xl">deputy deans I and III</p>
+                  <p class="flex justify-center text-slate-800">Dr. Endah Sudarmilah, S.T., M.Eng.</p>
+               </div>
+               <div class="bg-slate-50 flex-col py-12 px-5 rounded-3xl my-3 mx-5">
+                  <img src="../images/3 wakil 2.png" class="w-auto px-3 md:w-56 mx-auto" alt="">
+                  <p class="flex justify-center font-semibold text-slate-600 text-xl">deputy deans II</p>
+                  <p class="flex justify-center text-slate-800">Yanti Haryanti, S.Pd., M.A.</p>
+               </div>
+               <div class="bg-slate-50 flex-row py-12 px-5 rounded-3xl my-3 mx-5">
+                  <img src="../images/4 penjamin mutu.png" class="w-auto px-3 md:w-56 mx-auto" alt="">
+                  <p class="flex justify-center font-semibold text-slate-600 text-xl">quality assurance group</p>
+                  <p class="flex justify-center text-slate-800">Azizah Fatmawati, S.T., M.Cs.</p>
+               </div>
+            </div>
+          </div>
+      </div>
+   </section>
+
+   <!--Lecturer-->
+   <!--section class="w-screen flex justify-center ">
+      <div class="container flex justify-center bg-blue-300">
+         <div class="py-5 px-3">
+            <h1 class="font-bold flex justify-center">LECTURER</h1>
+            <div class="bg-blue-200 flex-col w-fit h-96 rounded-3xl">
+               <table class="table-auto">
+                  <thead>
+                    <tr>
+                      <th class="px-2">Name</th>
+                      <th class="px-2">Position</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                     <td class="px-2">	Dr. Fajar Suryawan, M.Eng.Sc.</td>
+                     <td class="px-2">Kepala Urusan Umum dan Akademik</td>
+                     </tr>
+                     <tr>
+                     <td class="px-2">	Aris Rakhmadi, S.T., M.Eng.</td>
+                     <td class="px-2">Kepala Urusan Keuangan</td>
+                     </tr>   
+                    <tr>
+                     <td class="px-2">Setyawan</td>
+                     <td class="px-2">Kepala Urusan Umum dan Akademik</td>
+                    </tr>
+                    <tr>
+                     <td class="px-2">Sujiono</td>
+                     <td class="px-2">Kepala Urusan Keuangan</td>
+                    </tr>
+                    <tr>
+                     <td class="px-2">M.Rosyid</td>
+                     <td class="px-2">Staff</td>
+                    </tr>
+                    <tr>
+                     <td class="px-2">Sumardi</td>
+                     <td class="px-2">Staff Laboran Informatika</td>
+                    </tr>
+                    <tr>
+                     <td class="px-2">Nur Rohman Catur W.</td>
+                     <td class="px-2">Staff Laboran Ilmu Komunikasi</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+         </div>
+         </div>
+      </div>
+      <div>
+         
+   </section-->
+   
+   <!--STAFF AND MANPOWER-->
+   <section class="w-screen flex justify-center">
+      <div class="container flex-col flex justify-center bg-white py-4 px-5 ">
+         <h1 class="font-bold flex justify-center py-8 text-3xl pt-24">STAFF AND MANPOWER</h1>
+         <div class="bg-indigo-200 w-fit mx-auto rounded-3xl my-6 mx-24"><br>
+            <table class="table-auto" cellspacing = "20px">
+               <thead>
+                 <tr>
+                   <th class="basis-1/2">Name</th>
+                   <th>Position</th>
+                 </tr>
+               </thead>
+               <tbody>
+                  <td class="px- basis-1/2">Setyawan</td>
+                  <td class="px- basis-1/2">Kepala Urusan Umum dan Akademik</td>
+                 </tr>
+                 <tr>
+                  <td class="px- basis-1/2">Sujiono</td>
+                  <td class="px- basis-1/2">Kepala Urusan Keuangan</td>
+                 </tr>
+                 <tr>
+                  <td class="px- basis-1/2">M.Rosyid</td>
+                  <td class="px- basis-1/2">Staff</td>
+                 </tr>
+                 <tr>
+                  <td class="px- basis-1/2">Sumardi</td>
+                  <td class="px- basis-1/2">Staff Laboran Informatika</td>
+                 </tr>
+                 <tr>
+                  <td class="px- basis-1/2">Nur Rohman Catur W.</td>
+                  <td class="px- basis-1/2">Staff Laboran Ilmu Komunikasi</td>
+               </tbody>
+             </table>
+         </div>
+      </div>
+   </section>
+
+
 </body>
-</html>
+</html>  
