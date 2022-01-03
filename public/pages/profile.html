@@ -15,65 +15,65 @@
 </head>
 <body class="overflow-x-hidden">
 
-  <!-- Navbar  -->
-  <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10">
-   <div class="container mx-auto px-4">
-      <div class="flex justify-between">
-         <div class="flex justify-between w-full ">
-            <div>
-               <a href="/"><img src="../images/umslogo.png" alt=""></a>
+        <!-- Navbar  -->
+        <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10">
+         <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+               <div class="flex justify-between w-full ">
+                  <div>
+                     <a href="/"><img src="../images/umslogo.png" alt=""></a>
+                  </div>
+                  <!-- navabar item primary -->
+                  <div class="hidden md:flex items-center space-x-1">
+                     <ul class="flex flex-row ">
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="/" >Home</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./profile.html" >Profile</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./program-study-informatics.html" >Study Program</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./information.html" >Information</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./contacts.html" >Contact</a></li>
+                        
+                     </ul>
+               </div>
             </div>
-            <!-- navabar item primary -->
-            <div class="hidden md:flex items-center space-x-1">
-               <ul class="flex flex-row ">
-                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="/" >Home</a></li>
-                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./profile.html" >Profile</a></li>
-                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./program-study-informatics.html" >Study Program</a></li>
-                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./information.html" >Information</a></li>
-                  <li class="border-blue-800 text-gray-600 font-semibold text-white hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./contacts.html" >Contact</a></li>
-                  
-               </ul>
+               <!-- Mobile menu  -->
+               <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                     <svg
+                        class="w-6 h-6 text-gray-500 hover:text-blue-600"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                     >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                     </svg>
+                  </button>
+            </div>
          </div>
-      </div>
-         <!-- Mobile menu  -->
-         <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
-               <svg
-                  class="w-6 h-6 text-gray-500 hover:text-blue-600"
-                  x-show="!showMenu"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-               >
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
-               </svg>
-            </button>
-      </div>
-   </div>
-   <!-- Mobile menu -->
-   <div class="hidden mobile-menu">
-      <ul class="">
-         <li class="active"> <a href="/" class="block text-sm px-2 py-4 text-white bg-blue-800 font-semibold text-white ">Home</a></li>
-         <li><a href="./profile.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Profile</a></li>
-         <li><a href="./program-study-informatics.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Study Program</a></li>
-         <li><a href="./information.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Information</a></li>
-         <li><a href="./contacts.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Contact</a></li>
-         
-      </ul>
-   </div>
-   <script>
-      const btn = document.querySelector("button.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
+         <!-- Mobile menu -->
+         <div class="hidden mobile-menu">
+            <ul class="">
+               <li class="active"> <a href="/" class="block text-sm px-2 py-4 text-white bg-blue-800 font-semibold ">Home</a></li>
+               <li><a href="./profile.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Study Program</a></li>
+               <li><a href="./information.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Information</a></li>
+               <li><a href="./contacts.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Contact</a></li>
+               
+            </ul>
+         </div>
+         <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
 
-      btn.addEventListener("click", () => {
-         menu.classList.toggle("hidden");
-      });
-   </script>
-</nav>
-<!-- End of navbar -->
+            btn.addEventListener("click", () => {
+               menu.classList.toggle("hidden");
+            });
+         </script>
+      </nav>
+   <!-- End of navbar -->
 
 
    <!--Visi Misi Tujuan  -->
@@ -214,39 +214,81 @@
    <section class="w-screen flex justify-center">
       <div class="container flex-col flex justify-center bg-white py-4 px-5 ">
          <h1 class="font-bold flex justify-center py-8 text-3xl pt-24">STAFF AND MANPOWER</h1>
-         <div class="bg-indigo-200 w-fit mx-auto rounded-3xl my-6 mx-24"><br>
-            <table class="table-auto" cellspacing = "20px">
-               <thead>
-                 <tr>
-                   <th class="basis-1/2">Name</th>
-                   <th>Position</th>
-                 </tr>
-               </thead>
-               <tbody>
-                  <td class="px- basis-1/2">Setyawan</td>
-                  <td class="px- basis-1/2">Kepala Urusan Umum dan Akademik</td>
-                 </tr>
-                 <tr>
-                  <td class="px- basis-1/2">Sujiono</td>
-                  <td class="px- basis-1/2">Kepala Urusan Keuangan</td>
-                 </tr>
-                 <tr>
-                  <td class="px- basis-1/2">M.Rosyid</td>
-                  <td class="px- basis-1/2">Staff</td>
-                 </tr>
-                 <tr>
-                  <td class="px- basis-1/2">Sumardi</td>
-                  <td class="px- basis-1/2">Staff Laboran Informatika</td>
-                 </tr>
-                 <tr>
-                  <td class="px- basis-1/2">Nur Rohman Catur W.</td>
-                  <td class="px- basis-1/2">Staff Laboran Ilmu Komunikasi</td>
-               </tbody>
-             </table>
+         <div class="w-full flex justify-center">
+            <div class="bg-indigo-200 w-fit mx-auto rounded-3xl my-6 mx-24"><br>
+               <table class="mx-auto table-auto px-2" cellspacing = "20px">
+                  <thead>
+                    <tr>
+                      <th class="basis-1/2">Name</th>
+                      <th>Position</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <td class="px- basis-1/2">Setyawan</td>
+                     <td class="px- basis-1/2">Kepala Urusan Umum dan Akademik</td>
+                    </tr>
+                    <tr>
+                     <td class="px- basis-1/2">Sujiono</td>
+                     <td class="px- basis-1/2">Kepala Urusan Keuangan</td>
+                    </tr>
+                    <tr>
+                     <td class="px- basis-1/2">M.Rosyid</td>
+                     <td class="px- basis-1/2">Staff</td>
+                    </tr>
+                    <tr>
+                     <td class="px- basis-1/2">Sumardi</td>
+                     <td class="px- basis-1/2">Staff Laboran Informatika</td>
+                    </tr>
+                    <tr>
+                     <td class="px- basis-1/2">Nur Rohman Catur W.</td>
+                     <td class="px- basis-1/2">Staff Laboran Ilmu Komunikasi</td>
+                  </tbody>
+                </table>
+            </div>
          </div>
       </div>
    </section>
 
+   <!-- Footer -->
+<footer class="px-12 lg:px-40 bg-gray-900 py-12">
+   <div class="container max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row">
+        <img src="../images/ums.svg" class="hidden lg:block lg:h-48 lg:w-48 mr-16 mt-5 ">
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">University Services</h4>
+            <ul>
+               <li><a href="http://baa.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Academic Unit</a></li>
+               <li><a href="http://bau.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">General Unit</a></li>
+               <li><a href="http://keu.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Finance Unit</a></li>
+               <li><a href="http://bti.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">IT Unit</a></li>
+               <li><a href="http://kemahasiswaan.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Students Corner</a></li>
+               <li><a href="https://bookstore.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS Bookstore</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">More UMS Link</h4>
+            <ul>
+               <li><a href="https://www.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS</a></li>
+               <li><a href="https://pmb.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Join UMS</a></li>
+               <li><a href="https://library.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Library</a></li>
+               <li><a href="https://journals.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Online Journal</a></li>
+               <li><a href="https://acec.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Careers</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative w-40">FKI</h4>
+            <ul>
+               <li><a href="../index.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Home</a></li>
+               <li><a href="./profile.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Study Programs</a></li>
+               <li><a href="./information.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Information</a></li>
+               <li><a href="./contacts.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Contacts</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- End of Footer -->
 
 </body>
 </html>  

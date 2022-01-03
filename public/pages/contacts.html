@@ -14,8 +14,9 @@
     <title>Contacts</title>
 </head>
 <body class="bg-gray-600">
-               <!-- Navbar  -->
-      <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10 top-0">
+    
+       <!-- Navbar  -->
+       <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10">
          <div class="container mx-auto px-4">
             <div class="flex justify-between">
                <div class="flex justify-between w-full ">
@@ -26,10 +27,10 @@
                   <div class="hidden md:flex items-center space-x-1">
                      <ul class="flex flex-row ">
                         <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="/" >Home</a></li>
-                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./pages/profile.html" >Profile</a></li>
-                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./pages/program-study.html" >Study Program</a></li>
-                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./pages/information.html" >Information</a></li>
-                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./pages/contacts.html" >Contact</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./profile.html" >Profile</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./program-study-informatics.html" >Study Program</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./information.html" >Information</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./contacts.html" >Contact</a></li>
                         
                      </ul>
                </div>
@@ -51,18 +52,32 @@
                      </svg>
                   </button>
             </div>
-            <script>
-               const btn = document.querySelector("button.mobile-menu-button");
-               const menu = document.querySelector(".mobile-menu");
-   
-               btn.addEventListener("click", () => {
-                  menu.classList.toggle("hidden");
-               });
-            </script>
-         </nav>
+         </div>
+         <!-- Mobile menu -->
+         <div class="hidden mobile-menu">
+            <ul class="">
+               <li class="active"> <a href="/" class="block text-sm px-2 py-4 text-white bg-blue-800 font-semibold ">Home</a></li>
+               <li><a href="./profile.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Study Program</a></li>
+               <li><a href="./information.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Information</a></li>
+               <li><a href="./contacts.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Contact</a></li>
+               
+            </ul>
+         </div>
+         <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+               menu.classList.toggle("hidden");
+            });
+         </script>
+      </nav>
    <!-- End of navbar -->
-    <div class=" bg-gray-500 m-10 rounded-xl mx-28">
-        <div class="p-10 container">
+
+
+    <div class=" w-full flex justify-center bg-gray-500 rounded-xl pt-24">
+        <div class="p-10 container mx-auto">
             <h1 class="font-medium text-white text-3xl">
                 Get in <br>
                 Touch With Us
@@ -94,6 +109,45 @@
     
         </div>
     </div>
-
+    <!-- Footer -->
+<footer class="px-12 lg:px-40 bg-gray-900 py-12">
+   <div class="container max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row">
+        <img src="../images/ums.svg" class="hidden lg:block lg:h-48 lg:w-48 mr-16 mt-5 ">
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">University Services</h4>
+            <ul>
+               <li><a href="http://baa.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Academic Unit</a></li>
+               <li><a href="http://bau.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">General Unit</a></li>
+               <li><a href="http://keu.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Finance Unit</a></li>
+               <li><a href="http://bti.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">IT Unit</a></li>
+               <li><a href="http://kemahasiswaan.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Students Corner</a></li>
+               <li><a href="https://bookstore.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS Bookstore</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">More UMS Link</h4>
+            <ul>
+               <li><a href="https://www.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS</a></li>
+               <li><a href="https://pmb.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Join UMS</a></li>
+               <li><a href="https://library.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Library</a></li>
+               <li><a href="https://journals.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Online Journal</a></li>
+               <li><a href="https://acec.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Careers</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative w-40">FKI</h4>
+            <ul>
+               <li><a href="../index.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Home</a></li>
+               <li><a href="./profile.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Study Programs</a></li>
+               <li><a href="./information.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Information</a></li>
+               <li><a href="./contacts.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Contacts</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- End of Footer -->
 </body>
 </html>
