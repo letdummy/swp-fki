@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
+       rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Information</title>
+</head>
+<body>
+        <!-- Navbar  -->
+      <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10">
+         <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+               <div class="flex justify-between w-full ">
+                  <div>
+                     <a href="/"><img src="../images/umslogo.png" alt=""></a>
+                  </div>
+                  <!-- navabar item primary -->
+                  <div class="hidden md:flex items-center space-x-1">
+                     <ul class="flex flex-row ">
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="/" >Home</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./profile.html" >Profile</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./program-study-informatics.html" >Study Program</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./information.html" >Information</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./contacts.html" >Contact</a></li>
+                        
+                     </ul>
+               </div>
+            </div>
+               <!-- Mobile menu  -->
+               <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                     <svg
+                        class="w-6 h-6 text-gray-500 hover:text-blue-600"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                     >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                     </svg>
+                  </button>
+            </div>
+         </div>
+         <!-- Mobile menu -->
+         <div class="hidden mobile-menu">
+            <ul class="">
+               <li class="active"> <a href="/" class="block text-sm px-2 py-4 text-white bg-blue-800 font-semibold ">Home</a></li>
+               <li><a href="./profile.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Study Program</a></li>
+               <li><a href="./information.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Information</a></li>
+               <li><a href="./contacts.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Contact</a></li>
+               
+            </ul>
+         </div>
+         <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+               menu.classList.toggle("hidden");
+            });
+         </script>
+      </nav>
+   <!-- End of navbar -->
+
+<!-- blank section -->
+   <section class="w-full bg-slate-800 h-16">
+
+   </section>
+
+   <!-- Lecturer -->
+      <section class="w-full flex justify-center bg-slate-800 py-12 lg:py-24">
+         <div class="container mx-auto flex flex-col">
+            <h1 class="ml-3 text-4xl lg:text-5xl text-slate-50 font-semibold my-6">Study</h1>
+            <div class="mx-auto flex flex-col lg:flex-row">
+               <div class=" p-6 rounded-xl m-3 shadow-xl bg-white lg:basis-1/2">
+                  <div class="">
+                     <h1 class="text-3xl font-semibold text-slate-700 my-2">Lectures</h1>
+                  </div>
+                  <div>
+                     <!-- Condition -->
+                     <p class="text-lg text-cyan-800 font-medium bg-opacity-10">Condition</p>
+                     <p class="text-slate-700 text-base font-light text-justify">Registered as a course participant as stated on the presence of the lecturer.</p>
+                     <!-- Activity -->
+                     <p class="text-lg text-cyan-800 font-medium bg-opacity-10 ">Activity</p>
+                     <p class="text-slate-700 text-base font-light text-justify">Things to consider are Student Presence Cards, List of lecturers course participants, Recapitulation of attendance, Students must at least take 75% of lecturer learning.</p>
+                  </div>
+               </div>
+               
+               <div class="p-6 rounded-xl m-3 shadow-xl bg-white lg:basis-1/2">
+                  <div class="">
+                     <h1 class="text-3xl font-semibold text-slate-700 my-2">Taking Courses</h1>
+                  </div>
+                  <div>
+                     <ul class="text-slate-700 text-base font-light text-justify list-disc ml-3">
+                        <li>
+                           <p>The number of credits that students may take is limited by the previous SAI (Semester Achievement Index). The maximum credit that can be taken is 24 credits.</p>
+                        </li>
+                        <li>
+                           <p>If the SKS withdrawal is more than the predetermined limit, the system will automatically deduct it. Students can determine courses that are canceled when KRS is on line.</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <div class="bg-white rounded-xl m-3 shadow-xl p-6">
+               <h1 class="ml-3 text-3xl font-semibold text-slate-700 my-2">Exam</h1>
+               <ul id="listExam" class="text-slate-700 text-base font-light text-justify list-disc ml-3" >
+                  <script>
+                     var textList = ["BAA makes an exam schedule based on the proposal of the Faculty/Department.",
+                                       "BAA prints exam attendance which will be distributed along with the distribution of exam question sheets to faculties.",
+                                       "BAA prints the Exam Participant Card + Exam Schedule and distributes it to students along with the exam schedule.",
+                                       "The student's requirement to take the Exam Participant Card is to have paid the SPP and Exam Fees that have been determined by the Finance Bureau.",
+                                       "The faculty coordinates the collection of exam questions and submits them to the BAA in a sealed/sealed envelope to be duplicated.",
+                                       "Submission of questions to BAA no later than H-2 according to the exam schedule.",
+                                       "Late questions are sent to BAA as point no. 6, the multiplication is the responsibility of the faculty.",
+                                       "BAA is responsible for the confidentiality of exam questions and is managed by a separate SOP.",
+                                       "BAA distributes the duplicated exam questions to the faculty in sealed/sealed envelopes along with the exam attendance for each room.",
+                                       "Students can only take course exams as listed on the exam card.",
+                                       "Exams are held on a scheduled basis, and no re-exams are held.",
+                                       "Students must obey all the rules for the implementation of the exam in their respective study programs / faculties."];
+                     var result = ""
+                     for(x in textList){
+                        result += "<li><p>"+ textList[x] +"</li></p>";
+                     }
+                     document.getElementById("listExam").innerHTML = result;
+                  </script>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+      <!-- Score -->
+      <section class="w-full flex justify-center py-12 lg:py-24">
+         <div class="container flex flex-col mx-auto p-3 lg:p-0">
+            <div>
+               <h1 class="text-4xl lg:text-5xl text-slate-700 font-semibold my-6">Score</h1>
+            </div>
+            <div class="grid grid-rows-6 lg:grid-rows-3 lg:grid-cols-2 gap-4">
+               <div class="bg-slate-800 rounded-xl shadow-xl p-6 row-span-2">
+                  <p class="text-3xl text-slate-100 font-semibold my-3">Score Input</p>
+                  <ul class="text-slate-200 text-base font-light text-justify list-disc ml-3">
+                     <li><p>The lecturer submits the Original Score of the exam results to the head of the Faculty/Department for examination and is archived by the faculty/department.</p></li>
+                     <li>
+                        <p>The value input process is carried out by each lecturer through one of 2 alternatives : </p>
+                        <ol class="ml-3 list-decimal">
+                           <li><p>Scores can be filled in by direct input to a file that has been provided on a compact disc (CD) by the Faculty. (Excel format and/or program).</p></li>
+                           <li><p>For lecturers who are familiar with the internet, they can input and upload grades online, through the Application Form on the Faculty computer that is connected to the network.</p></li>
+                        </ol>
+                     </li>
+                     <li><p>For the purpose of uploading grades, each lecturer has a personal User ID and Password provided by the IT Division. For security purposes, the password can be changed by the person concerned.</p></li>
+                     <li><p>The score uploaded by the Officer is done with the User ID and Password of the Officer.</p></li>
+                  </ul>
+               </div>
+               <div class="bg-slate-800 rounded-xl shadow-xl p-6 row-span-2">
+                  <p class="text-3xl text-slate-100 font-semibold my-3">Score Fix</p>
+                  <ul class="text-slate-200 text-base font-light text-justify list-disc ml-3">
+                     <li><p>Updating of grades can be done with written permission/approval from the Faculty Leader.</p></li>
+                     <li><p>Approval letter for value improvement followed up by Officer and archived.</p></li>
+                     <li>
+                        <p>The procedure for the proposed value update is as follows: </p>
+                        <ul class="ml-3 list-disc">
+                           <li>
+                              <p>From the students:</p>
+                              <ol class="ml-3 list-decimal">
+                                 <li><p>Students report to the supervisor.</p></li>
+                                 <li><p>If the lecturer deems it necessary to revise grades, the lecturer reports to the Head of the Department / Deputy Dean I</p></li>
+                                 <li><p>The head of the Department / Deputy Dean I issues an approval letter for improving grades and submits it to the Officer</p></li>
+                              </ol>
+                           </li>
+                           <li>
+                              <p>From the lecturer</p>
+                              <ol class="ml-3 list-decimal">
+                                 <li><p>If the lecturer deems it necessary to revise grades, the lecturer reports to the Head of the Department / Deputy Dean I.</p></li>
+                                 <li><p>The Head of Department / Deputy Dean I issues an approval letter for improving grades and submits it to the Officer.</p></li>
+                              </ol>
+                           </li>
+                        </ul>
+                     </li>
+                     <li><p>Maximum value update time is 2 weeks after graduation.</p></li>
+                     <li><p>The mechanism for input and value updates for the Short Semester (SS) and remediation exams is the same as for the Semester Value Input/Update.</p></li>
+                     <li><p>BAA and IT are unable to update grades.</p></li>
+                  </ul>
+               </div>
+               <div class="bg-slate-800 rounded-xl shadow-xl p-6"> 
+                  <p class="text-3xl text-slate-100 font-semibold my-3">Score Output</p>
+                  <ul class="text-slate-200 text-base font-light text-justify list-disc ml-3 h-fit">
+                     <li><p>During the consultation period and filling out the KRS, the Faculty Officer (administrator) prints out 1 KHS (Study Result Card) and is signed by the Academic Supervisor (AS) for student archives.</p></li>
+                     <li><p>Semester scores and Interim Transcripts can be viewed via the internet or computers provided by the faculty.</p></li>
+                     <li><p>The final grade transcript is printed by BAA for graduation or other relevant purposes.</p></li>
+                  </ul>
+              </div>
+              <div class="bg-slate-800 rounded-xl shadow-xl p-6"> 
+               <p class="text-3xl text-slate-100 font-semibold my-3">Score Files</p>
+               <ul class="text-slate-200 text-base font-light text-justify list-disc ml-3">
+                  <li><p>Faculties/Departments archive original grades and print outs from lecturers, proof of approval for grade updates, and printouts of grades at the end of each semester (KHS) in the form of print outs.</p></li>
+                  <li><p>Students archive the printed semester scores (KHS) which have been signed by the Academic Supervisor lecturer.</p></li>
+                  <li><p>BAA and IT Division back up all transaction data files and all values to the hard disk or CD.</p></li>
+               </ul>
+           </div>
+
+            </div>
+         </div>
+      </section>
+<!-- study plan card -->
+      <section class="w-full flex justify-center bg-slate-800 py-24">
+         <div class="container flex flex-col mx-auto p-3">
+            <div class="w-full bg-white rounded-xl mx-auto shadow-xl p-6">
+               <p class="text-2xl lg:text-3xl text-slate-800 font-semibold my-3">Study Plan Card (SPC)</p>
+               <p class="text-base text-slate-700 font-light">Registration of old students and programming of student Study Plan Cards (SPC) are carried out directly through the Online SPC Procedure, namely SPC filling is carried out directly by students via a computer. Before students fill out the SPC, it is highly recommended to consult with US lecturers about the courses to be taken. The mechanism for filling out the online SPC and consultation with PA lecturers is regulated as follows:</p>
+               <ul id="listSPC" class="text-slate-700 text-base font-light text-justify list-disc ml-3" >
+                  <script>
+                     var textList = ["Students pay Her-registration fees and SPP at the designated bank.*)",
+                              "Students take KHS to their respective PA lecturers for student archives.",
+                              "Each student fills out the KRS online at the computer laboratory/terminal in their respective faculties.",
+                              "Students access the online KRS system with a user ID (in the form of their respective NIM) and a password that has been provided by the officer. For further security, the password can be changed by the student concerned.",
+                              "Students who forget their passwords can update their passwords through the IT department by paying a fine of Rp. 5,000,-.",
+                              "If students face problems in taking courses, the students concerned need to consult with the Academic Supervisor lecturer. **)",
+                              "The KRS that has been filled in, printed (printed out) 1 sheet by the officer and asked for a signature to the Academic Supervisor lecturer for student archives.",
+                              "The mechanism for KRS revision (validation) is regulated as follows:",
+                              "After the 2nd week of the lecture period, the KRS service is closed, and students are required to take time off from college."];
+                     var childList = ["Students consult and ask for approval from the Academic Advisor lecturer, bringing a print out of the KRS that will be revised.",
+                              "The KRS revision which has been approved by the Academic Advisor lecturer, is submitted to the faculty officer.",
+                              "The officer updates the KRS based on the KRS revision that has been approved by the Academic Supervisor.",
+                              "The officer prints the resulting KRS change (1 sheet).",
+                              "Students ask for approval from the Academic Advisor lecturer for student archives.",
+                              "Validation is served a maximum of 2 weeks after the lecture period begins.",
+                              "The delay in filling out the KRS will be subject to a penalty withholding the SKS. In the first week 2 credits are cut, in the second week 4 credits are cut."]
+
+                     var result = ""
+                     for(x in textList){
+
+                        if(x == 7){
+                           var child = "";
+                           for(i in childList){
+                              child += "<li><p>"+ childList[i] +"</li></p>"
+                           }
+                           result += "<li><p>"+ textList[x] +"<ol class='ml-3 list-decimal'>"+ child +"</ol>"+"</li></p>";
+                        }
+                        result += "<li><p>"+ textList[x] +"</li></p>";
+                     }
+                     document.getElementById("listSPC").innerHTML = result;
+                  </script>
+                  <hr class="my-2 text-slate-500">
+                  <div>
+                     <p class="text-slate-400 italic text-base">Description :</p>
+                     <p class="text-slate-400 italic text-base">*) This payment is a condition for filling out KRS on-line. The computer will automatically refuse and give a warning to pay in advance for students who have not made tuition payments.</p>
+                     <p class="text-slate-400 italic text-base">**) Students who only take the thesis are still required to fill out the KRS according to the schedule</p>
+                  </div>
+            </div>
+
+            <div class=" w-full bg-white rounded-xl mx-auto my-3 shadow-xl p-6">
+               <p class="text-2xl lg:text-3xl text-slate-800 font-semibold my-3">Late Registration</p>
+               <ul id="listLateRegist" class="text-slate-700 text-base font-light text-justify list-disc ml-3" >
+                  <script>
+                     var textList = ["Students who are late in registering are calculated with a credit deduction of 2 credits per week of lateness.",
+                                       "The tolerance limit for late submission of KRS is 3 weeks, calculated the deadline for consultation according to the academic calendar.",
+                                       "Students who have not submitted their KRS by the deadline will automatically be categorized as non-active students.",
+                                       "Non-active students are subject to financial obligations as active students"];
+                     var result = ""
+                     for(x in textList){
+                        result += "<li><p>"+ textList[x] +"</li></p>";
+                     }
+                     document.getElementById("listLateRegist").innerHTML = result;
+                  </script>
+               </ul>
+            </div>
+         </div>
+      </section>
+<!-- Footer -->
+<footer class="px-12 lg:px-40 bg-gray-900 py-12">
+   <div class="container max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row">
+        <img src="../images/ums.svg" class="hidden lg:block lg:h-48 lg:w-48 mr-16 mt-5 ">
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">University Services</h4>
+            <ul>
+               <li><a href="http://baa.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Academic Unit</a></li>
+               <li><a href="http://bau.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">General Unit</a></li>
+               <li><a href="http://keu.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Finance Unit</a></li>
+               <li><a href="http://bti.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">IT Unit</a></li>
+               <li><a href="http://kemahasiswaan.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Students Corner</a></li>
+               <li><a href="https://bookstore.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS Bookstore</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">More UMS Link</h4>
+            <ul>
+               <li><a href="https://www.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS</a></li>
+               <li><a href="https://pmb.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Join UMS</a></li>
+               <li><a href="https://library.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Library</a></li>
+               <li><a href="https://journals.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Online Journal</a></li>
+               <li><a href="https://acec.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Careers</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative w-40">FKI</h4>
+            <ul>
+               <li><a href="../index.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Home</a></li>
+               <li><a href="./profile.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Study Programs</a></li>
+               <li><a href="./information.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Information</a></li>
+               <li><a href="./contacts.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Contacts</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- End of Footer -->
+</body>
+</html>

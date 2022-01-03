@@ -8,17 +8,287 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap"
+       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap"
        rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Profile</title>
 </head>
-<body>
-    <div class="flex flex-row bg-gray-800">
-        <ul class="text-gray-300">
-            <li>Tes</li>
-            <li>kucing</li>
-        </ul>
-    </div>
+<body class="overflow-x-hidden">
+
+        <!-- Navbar  -->
+        <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10">
+         <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+               <div class="flex justify-between w-full ">
+                  <div>
+                     <a href="/"><img src="../images/umslogo.png" alt=""></a>
+                  </div>
+                  <!-- navabar item primary -->
+                  <div class="hidden md:flex items-center space-x-1">
+                     <ul class="flex flex-row ">
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="/" >Home</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./profile.html" >Profile</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./program-study-informatics.html" >Study Program</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./information.html" >Information</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./contacts.html" >Contact</a></li>
+                        
+                     </ul>
+               </div>
+            </div>
+               <!-- Mobile menu  -->
+               <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                     <svg
+                        class="w-6 h-6 text-gray-500 hover:text-blue-600"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                     >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                     </svg>
+                  </button>
+            </div>
+         </div>
+         <!-- Mobile menu -->
+         <div class="hidden mobile-menu">
+            <ul class="">
+               <li class="active"> <a href="/" class="block text-sm px-2 py-4 text-white bg-blue-800 font-semibold ">Home</a></li>
+               <li><a href="./profile.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Study Program</a></li>
+               <li><a href="./information.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Information</a></li>
+               <li><a href="./contacts.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Contact</a></li>
+               
+            </ul>
+         </div>
+         <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+               menu.classList.toggle("hidden");
+            });
+         </script>
+      </nav>
+   <!-- End of navbar -->
+
+
+   <!--Visi Misi Tujuan  -->
+   <section class="w-screen flex justify-center">
+      <div class="container flex justify-center">
+         <div class="bg-white mx-auto pt-24">
+            <h1 class="font-bold flex justify-center text-3xl bg-clip-content" >
+               Vision & Mission
+            </h1>
+
+            <div class="pt-12">
+               <div class="bg-blue-800 text-white flex flex-row py-4 px-5 rounded-3xl my-6 mx-40">
+                  <p class="text-2xl basis-1/2 font-semibold text-white" >Vision</p>
+                  <p class="basis-1/2">
+                     In 2029, Universitas Muhammadiyah Surakarta
+                     will become the Center for Islamic
+                     Science and Technology Education and
+                     Development and provide a direction for change.
+                  </p>
+               </div>
+   
+               <div class="bg-blue-800 text-white flex flex-row py-4 px-5 rounded-3xl my-6 mx-40">
+                  <p class="text-2xl basis-1/2 font-semibold text-white">Mission</p>
+                  <p class="basis-1/2">
+                     1. Educate students to master science and technology in the 
+                        field of communication and informatics based on Islamic values.<br><br>
+                     2. Conducting research activities in the field of communication 
+                        pand informatics, both theoretical and applied.<br><br>
+                     3. Organizing services to the community as a form of service.<br><br>
+                     4. Establish and enhance sustainable cooperation with relevant 
+                        parties at regional, national and international levels.
+                  </p>
+               </div>
+   
+               <div class="bg-blue-800 text-white flex flex-row py-4 px-5 rounded-3xl my-6 mx-40">
+                  <p class="text-2xl basis-1/2 font-semibold text-white">Goal</p>
+                  <p class="basis-1/2">
+                     1. To produce graduates of communication science and informatics 
+                        who master science and technology in the field of communication and informatics 
+                        based on Islamic values.<br><br>
+                     2. Produce research and development products in the field of 
+                        communication and informatics.<br><br>
+                     3. Produce community service products in the field of 
+                        communication and informatics.<br><br>
+                     4. Implement sustainable cooperation with related 
+                        parties at regional, national and international levels.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!--Pimpinan-->
+   <section class="w-screen flex justify-center bg-white">
+      <div class="container flex justify-center">
+         <div class="bg-white -300 w-screen pt-24">
+            <h1 class="font-bold flex justify-center text-3xl">FACULTY LEADER</h1>
+            <p class="flex justify-center">Communication and Information Technology is led by a dean and assisted by a deputy dean.</p>
+            <div class="grid grid-cols-2 grid-rows-2 pt-12 mx-20">
+               <div class="bg-slate-200 flex-col py-12 px-5 rounded-3xl my-3 mx-6">
+                  <img src="../images/1 dekan.png" class="w-auto px-3 md:w-56 mx-auto" alt="">
+                  <p class="flex justify-center font-semibold text-slate-600 text-xl">dean of FKI</p>
+                  <p class="flex justify-center text-slate-800 text-lg">Nurgiyatna S.T. M.Sc. Ph.D.</p>
+               </div>
+               <div class="bg-slate-200 flex-row py-12 px-5 rounded-3xl my-3 mx-5">
+                  <img src="../images/2 wakil 1.png" class="w-auto px-3 md:w-56 mx-auto" alt="">
+                  <p class="flex justify-center font-semibold text-slate-600 text-xl">deputy deans I and III</p>
+                  <p class="flex justify-center text-slate-800 text-lg">Dr. Endah Sudarmilah, S.T., M.Eng.</p>
+               </div>
+               <div class="bg-slate-200 flex-col py-12 px-5 rounded-3xl my-3 mx-5">
+                  <img src="../images/3 wakil 2.png" class="w-auto px-3 md:w-56 mx-auto" alt="">
+                  <p class="flex justify-center font-semibold text-slate-600 text-xl">deputy deans II</p>
+                  <p class="flex justify-center text-slate-800 text-lg">Yanti Haryanti, S.Pd., M.A.</p>
+               </div>
+               <div class="bg-slate-200 flex-row py-12 px-5 rounded-3xl my-3 mx-5">
+                  <img src="../images/4 penjamin mutu.png" class="w-auto px-3 md:w-56 mx-auto" alt="">
+                  <p class="flex justify-center font-semibold text-slate-600 text-xl">quality assurance group</p>
+                  <p class="flex justify-center text-slate-800 text-lg">Azizah Fatmawati, S.T., M.Cs.</p>
+               </div>
+            </div>
+          </div>
+      </div>
+   </section>
+
+   <!--Lecturer-->
+   <!--section class="w-screen flex justify-center ">
+      <div class="container flex justify-center">
+         <div class="py-5 px-3">
+            <h1 class="font-bold flex justify-center">LECTURER</h1>
+            <div class="bg-slate-100 flex-col w-fit h-96 rounded-3xl mx-28">
+               <table class="table-auto">
+                  <thead>
+                    <tr>
+                      <th class="px-2">Name</th>
+                      <th class="px-2">Position</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                     <td class="px-2">	Dr. Fajar Suryawan, M.Eng.Sc.</td>
+                     <td class="px-2">Kepala Urusan Umum dan Akademik</td>
+                     </tr>
+                     <tr>
+                     <td class="px-2">	Aris Rakhmadi, S.T., M.Eng.</td>
+                     <td class="px-2">Kepala Urusan Keuangan</td>
+                     </tr>   
+                    <tr>
+                     <td class="px-2">Setyawan</td>
+                     <td class="px-2">Kepala Urusan Umum dan Akademik</td>
+                    </tr>
+                    <tr>
+                     <td class="px-2">Sujiono</td>
+                     <td class="px-2">Kepala Urusan Keuangan</td>
+                    </tr>
+                    <tr>
+                     <td class="px-2">M.Rosyid</td>
+                     <td class="px-2">Staff</td>
+                    </tr>
+                    <tr>
+                     <td class="px-2">Sumardi</td>
+                     <td class="px-2">Staff Laboran Informatika</td>
+                    </tr>
+                    <tr>
+                     <td class="px-2">Nur Rohman Catur W.</td>
+                     <td class="px-2">Staff Laboran Ilmu Komunikasi</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+         </div>
+         </div>
+      </div>
+      <div>
+         
+   </section-->
+   
+   <!--STAFF AND MANPOWER-->
+   <section class="w-screen flex justify-center">
+      <div class="container flex-col flex justify-center bg-white py-4 px-5 pt-24">
+         <h1 class="font-bold flex justify-center py-8 text-3xl pt-24">STAFF AND MANPOWER</h1>
+         <!--img src="../images/STAFF AND MANPOWER.png" class="w-auto px-3 md:w-96 mx-auto pb-10" alt=""-->
+         <div class="bg-slate-200 w-fit mx-auto rounded-3xl my-6 px-11 pt-12 pb-10 text-gray-50">
+            <table class="table-auto pb-10" cellspacing = "20px">
+               <thead>
+                 <tr class="text-slate-800 font-semibold text-xl">
+                   <th>Name</th>
+                   <th>Position</th>
+                 </tr>
+               </thead>
+               <tbody>
+                  <td class="px-16 py-10 mx-10 bg-blue-900 rounded-tl-md">Setyawan</td>
+                  <td class="px-16 py-10 mx-10 bg-blue-900 rounded-tr-md">Kepala Urusan Umum dan Akademik</td>
+                 </tr>
+                 <tr>
+                  <td class="px-16 py-10 mx-10 bg-slate-400">Sujiono</td>
+                  <td class="px-16 py-10 mx-10 bg-slate-400">Kepala Urusan Keuangan</td>
+                 </tr>
+                 <tr>
+                  <td class="px-16 py-10 mx-10 bg-blue-900">M.Rosyid</td>
+                  <td class="px-16 py-10 mx-10 bg-blue-900">Staff</td>
+                 </tr>
+                 <tr>
+                  <td class="px-16 py-10 mx-10 bg-slate-400">Sumardi</td>
+                  <td class="px-16 py-10 mx-10 bg-slate-400">Staff Laboran Informatika</td>
+                 </tr>
+                 <tr>
+                  <td class="px-16 py-10 mx-10 bg-blue-900 rounded-bl-md">Nur Rohman Catur W.</td>
+                  <td class="px-16 py-10 mx-10 bg-blue-900 rounded-br-md">Staff Laboran Ilmu Komunikasi</td>
+               </tbody>
+             </table>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+<footer class="px-12 lg:px-40 bg-gray-900 py-12">
+   <div class="container max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row">
+        <img src="../images/ums.svg" class="hidden lg:block lg:h-48 lg:w-48 mr-16 mt-5 ">
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">University Services</h4>
+            <ul>
+               <li><a href="http://baa.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Academic Unit</a></li>
+               <li><a href="http://bau.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">General Unit</a></li>
+               <li><a href="http://keu.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Finance Unit</a></li>
+               <li><a href="http://bti.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">IT Unit</a></li>
+               <li><a href="http://kemahasiswaan.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Students Corner</a></li>
+               <li><a href="https://bookstore.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS Bookstore</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">More UMS Link</h4>
+            <ul>
+               <li><a href="https://www.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS</a></li>
+               <li><a href="https://pmb.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Join UMS</a></li>
+               <li><a href="https://library.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Library</a></li>
+               <li><a href="https://journals.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Online Journal</a></li>
+               <li><a href="https://acec.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Careers</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative w-40">FKI</h4>
+            <ul>
+               <li><a href="../index.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Home</a></li>
+               <li><a href="./profile.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Study Programs</a></li>
+               <li><a href="./information.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Information</a></li>
+               <li><a href="./contacts.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Contacts</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- End of Footer -->
+
 </body>
-</html>
+</html>  

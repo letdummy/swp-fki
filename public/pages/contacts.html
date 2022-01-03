@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap"
+       rel="stylesheet"
+    />
+    <title>Contacts</title>
+</head>
+<body class="bg-gray-600">
+    
+       <!-- Navbar  -->
+       <nav class="fixed w-screen bg-white bg-opacity-50 backdrop-blur shadow-lg py-4 z-10">
+         <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+               <div class="flex justify-between w-full ">
+                  <div>
+                     <a href="/"><img src="../images/umslogo.png" alt=""></a>
+                  </div>
+                  <!-- navabar item primary -->
+                  <div class="hidden md:flex items-center space-x-1">
+                     <ul class="flex flex-row ">
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="/" >Home</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./profile.html" >Profile</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./program-study-informatics.html" >Study Program</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./information.html" >Information</a></li>
+                        <li class="border-blue-800 text-gray-600 font-semibold hover:bg-blue-900  hover:text-gray-200 px-1 xl:px-4 py-2 mx-3 rounded transition duration-300"><a href="./contacts.html" >Contact</a></li>
+                        
+                     </ul>
+               </div>
+            </div>
+               <!-- Mobile menu  -->
+               <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                     <svg
+                        class="w-6 h-6 text-gray-500 hover:text-blue-600"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                     >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                     </svg>
+                  </button>
+            </div>
+         </div>
+         <!-- Mobile menu -->
+         <div class="hidden mobile-menu">
+            <ul class="">
+               <li class="active"> <a href="/" class="block text-sm px-2 py-4 text-white bg-blue-800 font-semibold ">Home</a></li>
+               <li><a href="./profile.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Study Program</a></li>
+               <li><a href="./information.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Information</a></li>
+               <li><a href="./contacts.html" class="block text-sm px-2 py-4 hover:bg-blue-800 transition duration-300">Contact</a></li>
+               
+            </ul>
+         </div>
+         <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+               menu.classList.toggle("hidden");
+            });
+         </script>
+      </nav>
+   <!-- End of navbar -->
+
+
+    <div class=" w-full flex justify-center bg-gray-500 rounded-xl pt-24">
+        <div class="p-10 container mx-auto">
+            <h1 class="font-medium text-white text-3xl">
+                Get in <br>
+                Touch With Us
+            </h1>
+            <hr class="text-white p-3">
+            <p class="text-white font-normal">
+                Wanna know more about us  ?<br><br>
+                The Informatics Engineering Study Program, which was established in 2007, 
+                <br> leads to specialization in the fields of Information Systems, Computer Network Systems and Multimedia, and Software Engineering and Animation Systems.
+                <br>
+                <br>
+                The Communication Studies Program FKI UMS, which was established in 2006, 
+                <br> directs students to have competence in the field of Public Relations and Marketing Communication, and the field of Broadcasting and Cinema.
+            </p>
+
+            <div class="bg-gray-400 m-10 rounded-xl">
+                <p class="p-10 text-white">
+                    Jl. A. Yani Tromol Pos 1 Pabelan, Kartasura, Surakarta 57162, Jawa Tengah, Indonesia. <br>
+                    Telp. (0271) 717417 / 719483, ext. 3437; <br>
+                    Fax (0271) 714448; <br>
+                    E-mail:  fki@ums.ac.id <br>
+                    <br>
+                    The Faculty of Communication and Informatics are located in Campus 2 Complex, Universitas Muhammadiyah Surakarta. <br>
+                    <br>
+                    <img src="../images/fki.png" class="py-10 scale-100">
+                </p>
+
+            </div>
+    
+        </div>
+    </div>
+    <!-- Footer -->
+<footer class="px-12 lg:px-40 bg-gray-900 py-12">
+   <div class="container max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row">
+        <img src="../images/ums.svg" class="hidden lg:block lg:h-48 lg:w-48 mr-16 mt-5 ">
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">University Services</h4>
+            <ul>
+               <li><a href="http://baa.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Academic Unit</a></li>
+               <li><a href="http://bau.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">General Unit</a></li>
+               <li><a href="http://keu.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Finance Unit</a></li>
+               <li><a href="http://bti.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">IT Unit</a></li>
+               <li><a href="http://kemahasiswaan.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Students Corner</a></li>
+               <li><a href="https://bookstore.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS Bookstore</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative">More UMS Link</h4>
+            <ul>
+               <li><a href="https://www.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">UMS</a></li>
+               <li><a href="https://pmb.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Join UMS</a></li>
+               <li><a href="https://library.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Library</a></li>
+               <li><a href="https://journals.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Online Journal</a></li>
+               <li><a href="https://acec.ums.ac.id/" target="_blank" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Careers</a></li>
+            </ul>
+         </div>
+         <div class="lg:w-3/12 px-8">
+            <h4 class="text-lg text-white capitalize mb-6 font-medium relative w-40">FKI</h4>
+            <ul>
+               <li><a href="../index.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Home</a></li>
+               <li><a href="./profile.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Profile</a></li>
+               <li><a href="./program-study-informatics.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Study Programs</a></li>
+               <li><a href="./information.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Information</a></li>
+               <li><a href="./contacts.html" class="text-base capitalize text-gray-500 no-underline font-light block ease-in-out py-1 hover:text-white hover:pl-2 ">Contacts</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- End of Footer -->
+</body>
+</html>
